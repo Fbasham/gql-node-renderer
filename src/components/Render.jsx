@@ -1,11 +1,11 @@
-import Wrapper from "./Wrapper";
+import Recur from "./Recur";
 import { v4 as uuid } from "uuid";
 
 export default function Render(props) {
   return (
     <>
       {props.data.map((node) => (
-        <Wrapper key={uuid()} node={node} />
+        <Recur key={uuid()} node={node} />
       ))}
     </>
   );
